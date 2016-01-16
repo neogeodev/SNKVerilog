@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500xl" device="XC9572XL" pkg="TQ100" spg="-10"/><pin dir="input" nm="SELECT" no="49"/><pin dir="input" nm="CS" no="79"/><pin dir="input" nm="nCSL" no="50"/><pin dir="input" nm="A&lt;0&gt;" no="28"/><pin dir="input" nm="B&lt;0&gt;" no="29"/><pin dir="input" nm="nCSU&lt;0&gt;" no="77"/><pin dir="input" nm="nCSU&lt;1&gt;" no="78"/><pin dir="input" nm="B&lt;10&gt;" no="93"/><pin dir="input" nm="A&lt;10&gt;" no="92"/><pin dir="input" nm="B&lt;11&gt;" no="95"/><pin dir="input" nm="A&lt;11&gt;" no="94"/><pin dir="input" nm="B&lt;12&gt;" no="8"/><pin dir="input" nm="A&lt;12&gt;" no="6"/><pin dir="input" nm="A&lt;13&gt;" no="9"/><pin dir="input" nm="B&lt;13&gt;" no="10"/><pin dir="input" nm="B&lt;14&gt;" no="16"/><pin dir="input" nm="A&lt;14&gt;" no="15"/><pin dir="input" nm="B&lt;15&gt;" no="18"/><pin dir="input" nm="A&lt;15&gt;" no="17"/><pin dir="input" nm="B&lt;1&gt;" no="32"/><pin dir="input" nm="A&lt;1&gt;" no="30"/><pin dir="input" nm="B&lt;2&gt;" no="40"/><pin dir="input" nm="A&lt;2&gt;" no="39"/><pin dir="input" nm="B&lt;3&gt;" no="42"/><pin dir="input" nm="A&lt;3&gt;" no="41"/><pin dir="input" nm="B&lt;4&gt;" no="53"/><pin dir="input" nm="A&lt;4&gt;" no="52"/><pin dir="input" nm="B&lt;5&gt;" no="55"/><pin dir="input" nm="A&lt;5&gt;" no="54"/><pin dir="input" nm="B&lt;6&gt;" no="70"/><pin dir="input" nm="A&lt;6&gt;" no="68"/><pin dir="input" nm="B&lt;7&gt;" no="72"/><pin dir="input" nm="A&lt;7&gt;" no="71"/><pin dir="input" nm="B&lt;8&gt;" no="82"/><pin dir="input" nm="A&lt;8&gt;" no="81"/><pin dir="input" nm="A&lt;9&gt;" no="85"/><pin dir="input" nm="B&lt;9&gt;" no="86"/><pin dir="output" nm="Y&lt;0&gt;" no="33" sr="fast"/><pin dir="output" nm="Y&lt;10&gt;" no="90" sr="fast"/><pin dir="output" nm="Y&lt;11&gt;" no="91" sr="fast"/><pin dir="output" nm="Y&lt;12&gt;" no="11" sr="fast"/><pin dir="output" nm="Y&lt;13&gt;" no="12" sr="fast"/><pin dir="output" nm="Y&lt;14&gt;" no="13" sr="fast"/><pin dir="output" nm="Y&lt;15&gt;" no="14" sr="fast"/><pin dir="output" nm="Y&lt;1&gt;" no="35" sr="fast"/><pin dir="output" nm="Y&lt;2&gt;" no="36" sr="fast"/><pin dir="output" nm="Y&lt;3&gt;" no="37" sr="fast"/><pin dir="output" nm="Y&lt;4&gt;" no="56" sr="fast"/><pin dir="output" nm="Y&lt;5&gt;" no="58" sr="fast"/><pin dir="output" nm="Y&lt;6&gt;" no="66" sr="fast"/><pin dir="output" nm="Y&lt;7&gt;" no="67" sr="fast"/><pin dir="output" nm="Y&lt;8&gt;" no="87" sr="fast"/><pin dir="output" nm="Y&lt;9&gt;" no="89" sr="fast"/></ibis>

@@ -1,0 +1,518 @@
+ 
+cpldfit:  version P.58f                             Xilinx Inc.
+                                  Fitter Report
+Design Name: NEO257                              Date:  1-16-2016,  4:35AM
+Device Used: XC9572XL-10-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+16 /72  ( 22%) 48  /360  ( 13%) 49 /216 ( 23%)   0  /72  (  0%) 53 /72  ( 74%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           4/18       13/54       12/90      13/18
+FB2           4/18       12/54       12/90      12/18
+FB3           4/18       11/54       12/90      13/18
+FB4           4/18       13/54       12/90      15/18
+             -----       -----       -----      -----    
+             16/72       49/216      48/360     53/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   37          37    |  I/O              :    53      66
+Output        :   16          16    |  GCK/IO           :     0       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     53          53
+
+** Power Data **
+
+There are 16 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'NEO257.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 16 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+Y<14>               3     6     FB1_2   13   I/O     O       STD  FAST 
+Y<15>               3     6     FB1_5   14   I/O     O       STD  FAST 
+Y<0>                3     5     FB1_12  33   I/O     O       STD  FAST 
+Y<2>                3     5     FB1_13  36   I/O     O       STD  FAST 
+Y<8>                3     6     FB2_1   87   I/O     O       STD  FAST 
+Y<11>               3     6     FB2_3   91   I/O     O       STD  FAST 
+Y<12>               3     6     FB2_15  11   I/O     O       STD  FAST 
+Y<13>               3     6     FB2_17  12   I/O     O       STD  FAST 
+Y<1>                3     5     FB3_5   35   I/O     O       STD  FAST 
+Y<3>                3     5     FB3_8   37   I/O     O       STD  FAST 
+Y<4>                3     5     FB3_15  56   I/O     O       STD  FAST 
+Y<5>                3     5     FB3_17  58   I/O     O       STD  FAST 
+Y<7>                3     5     FB4_2   67   I/O     O       STD  FAST 
+Y<6>                3     5     FB4_9   66   I/O     O       STD  FAST 
+Y<9>                3     6     FB4_15  89   I/O     O       STD  FAST 
+Y<10>               3     6     FB4_17  90   I/O     O       STD  FAST 
+
+** 37 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+B<14>               FB1_1   16   I/O     I
+B<15>               FB1_3   18   I/O     I
+A<14>               FB1_6   15   I/O     I
+A<15>               FB1_8   17   I/O     I
+A<0>                FB1_10  28   I/O     I
+B<0>                FB1_15  29   I/O     I
+A<2>                FB1_16  39   I/O     I
+A<1>                FB1_17  30   I/O     I
+B<2>                FB1_18  40   I/O     I
+A<11>               FB2_2   94   I/O     I
+B<10>               FB2_4   93   I/O     I
+B<11>               FB2_5   95   I/O     I
+A<12>               FB2_12  6    I/O     I
+B<12>               FB2_13  8    I/O     I
+A<13>               FB2_14  9    I/O     I
+B<13>               FB2_16  10   I/O     I
+A<10>               FB2_18  92   I/O     I
+A<3>                FB3_1   41   I/O     I
+B<1>                FB3_2   32   I/O     I
+SELECT              FB3_3   49   I/O     I
+nCSL                FB3_4   50   I/O     I
+B<4>                FB3_6   53   I/O     I
+A<5>                FB3_7   54   I/O     I
+B<3>                FB3_9   42   I/O     I
+A<4>                FB3_11  52   I/O     I
+B<5>                FB3_14  55   I/O     I
+A<7>                FB4_3   71   I/O     I
+B<7>                FB4_4   72   I/O     I
+A<6>                FB4_5   68   I/O     I
+nCSU<0>             FB4_7   77   I/O     I
+B<6>                FB4_8   70   I/O     I
+A<8>                FB4_10  81   I/O     I
+B<8>                FB4_12  82   I/O     I
+A<9>                FB4_13  85   I/O     I
+nCSU<1>             FB4_14  78   I/O     I
+B<9>                FB4_16  86   I/O     I
+CS                  FB4_18  79   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               13/41
+Number of signals used by logic mapping into function block:  13
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1   16    I/O     I
+Y<14>                 3       0     0   2     FB1_2   13    I/O     O
+(unused)              0       0     0   5     FB1_3   18    I/O     I
+(unused)              0       0     0   5     FB1_4   20    I/O     
+Y<15>                 3       0     0   2     FB1_5   14    I/O     O
+(unused)              0       0     0   5     FB1_6   15    I/O     I
+(unused)              0       0     0   5     FB1_7   25    I/O     
+(unused)              0       0     0   5     FB1_8   17    I/O     I
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O 
+(unused)              0       0     0   5     FB1_10  28    I/O     I
+(unused)              0       0     0   5     FB1_11  23    GCK/I/O 
+Y<0>                  3       0     0   2     FB1_12  33    I/O     O
+Y<2>                  3       0     0   2     FB1_13  36    I/O     O
+(unused)              0       0     0   5     FB1_14  27    GCK/I/O 
+(unused)              0       0     0   5     FB1_15  29    I/O     I
+(unused)              0       0     0   5     FB1_16  39    I/O     I
+(unused)              0       0     0   5     FB1_17  30    I/O     I
+(unused)              0       0     0   5     FB1_18  40    I/O     I
+
+Signals Used by Logic in Function Block
+  1: A<0>               6: B<14>             10: SELECT 
+  2: A<14>              7: B<15>             11: nCSL 
+  3: A<15>              8: B<2>              12: nCSU<0> 
+  4: A<2>               9: CS                13: nCSU<1> 
+  5: B<0>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Y<14>                .X...X..XX.XX........................... 6
+Y<15>                ..X...X.XX.XX........................... 6
+Y<0>                 X...X...XXX............................. 5
+Y<2>                 ...X...XXXX............................. 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               12/42
+Number of signals used by logic mapping into function block:  12
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+Y<8>                  3       0     0   2     FB2_1   87    I/O     O
+(unused)              0       0     0   5     FB2_2   94    I/O     I
+Y<11>                 3       0     0   2     FB2_3   91    I/O     O
+(unused)              0       0     0   5     FB2_4   93    I/O     I
+(unused)              0       0     0   5     FB2_5   95    I/O     I
+(unused)              0       0     0   5     FB2_6   96    I/O     
+(unused)              0       0     0   5     FB2_7   3     GTS/I/O 
+(unused)              0       0     0   5     FB2_8   97    I/O     
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O 
+(unused)              0       0     0   5     FB2_10  1     I/O     
+(unused)              0       0     0   5     FB2_11  4     GTS/I/O 
+(unused)              0       0     0   5     FB2_12  6     I/O     I
+(unused)              0       0     0   5     FB2_13  8     I/O     I
+(unused)              0       0     0   5     FB2_14  9     I/O     I
+Y<12>                 3       0     0   2     FB2_15  11    I/O     O
+(unused)              0       0     0   5     FB2_16  10    I/O     I
+Y<13>                 3       0     0   2     FB2_17  12    I/O     O
+(unused)              0       0     0   5     FB2_18  92    I/O     I
+
+Signals Used by Logic in Function Block
+  1: A<11>              5: B<11>              9: CS 
+  2: A<12>              6: B<12>             10: SELECT 
+  3: A<13>              7: B<13>             11: nCSU<0> 
+  4: A<8>               8: B<8>              12: nCSU<1> 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Y<8>                 ...X...XXXXX............................ 6
+Y<11>                X...X...XXXX............................ 6
+Y<12>                .X...X..XXXX............................ 6
+Y<13>                ..X...X.XXXX............................ 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               11/43
+Number of signals used by logic mapping into function block:  11
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1   41    I/O     I
+(unused)              0       0     0   5     FB3_2   32    I/O     I
+(unused)              0       0     0   5     FB3_3   49    I/O     I
+(unused)              0       0     0   5     FB3_4   50    I/O     I
+Y<1>                  3       0     0   2     FB3_5   35    I/O     O
+(unused)              0       0     0   5     FB3_6   53    I/O     I
+(unused)              0       0     0   5     FB3_7   54    I/O     I
+Y<3>                  3       0     0   2     FB3_8   37    I/O     O
+(unused)              0       0     0   5     FB3_9   42    I/O     I
+(unused)              0       0     0   5     FB3_10  60    I/O     
+(unused)              0       0     0   5     FB3_11  52    I/O     I
+(unused)              0       0     0   5     FB3_12  61    I/O     
+(unused)              0       0     0   5     FB3_13  63    I/O     
+(unused)              0       0     0   5     FB3_14  55    I/O     I
+Y<4>                  3       0     0   2     FB3_15  56    I/O     O
+(unused)              0       0     0   5     FB3_16  64    I/O     
+Y<5>                  3       0     0   2     FB3_17  58    I/O     O
+(unused)              0       0     0   5     FB3_18  59    I/O     
+
+Signals Used by Logic in Function Block
+  1: A<1>               5: B<1>               9: CS 
+  2: A<3>               6: B<3>              10: SELECT 
+  3: A<4>               7: B<4>              11: nCSL 
+  4: A<5>               8: B<5>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Y<1>                 X...X...XXX............................. 5
+Y<3>                 .X...X..XXX............................. 5
+Y<4>                 ..X...X.XXX............................. 5
+Y<5>                 ...X...XXXX............................. 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               13/41
+Number of signals used by logic mapping into function block:  13
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1   65    I/O     
+Y<7>                  3       0     0   2     FB4_2   67    I/O     O
+(unused)              0       0     0   5     FB4_3   71    I/O     I
+(unused)              0       0     0   5     FB4_4   72    I/O     I
+(unused)              0       0     0   5     FB4_5   68    I/O     I
+(unused)              0       0     0   5     FB4_6   76    I/O     
+(unused)              0       0     0   5     FB4_7   77    I/O     I
+(unused)              0       0     0   5     FB4_8   70    I/O     I
+Y<6>                  3       0     0   2     FB4_9   66    I/O     O
+(unused)              0       0     0   5     FB4_10  81    I/O     I
+(unused)              0       0     0   5     FB4_11  74    I/O     
+(unused)              0       0     0   5     FB4_12  82    I/O     I
+(unused)              0       0     0   5     FB4_13  85    I/O     I
+(unused)              0       0     0   5     FB4_14  78    I/O     I
+Y<9>                  3       0     0   2     FB4_15  89    I/O     O
+(unused)              0       0     0   5     FB4_16  86    I/O     I
+Y<10>                 3       0     0   2     FB4_17  90    I/O     O
+(unused)              0       0     0   5     FB4_18  79    I/O     I
+
+Signals Used by Logic in Function Block
+  1: A<10>              6: B<6>              10: SELECT 
+  2: A<6>               7: B<7>              11: nCSL 
+  3: A<7>               8: B<9>              12: nCSU<0> 
+  4: A<9>               9: CS                13: nCSU<1> 
+  5: B<10>            
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Y<7>                 ..X...X.XXX............................. 5
+Y<6>                 .X...X..XXX............................. 5
+Y<9>                 ...X...XXX.XX........................... 6
+Y<10>                X...X...XX.XX........................... 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+Y_I(0) <= ((SELECT AND A(0))
+	OR (NOT SELECT AND B(0)));
+Y(0) <= Y_I(0) when Y_OE(0) = '1' else 'Z';
+Y_OE(0) <= (CS AND NOT nCSL);
+
+
+Y_I(1) <= ((SELECT AND A(1))
+	OR (NOT SELECT AND B(1)));
+Y(1) <= Y_I(1) when Y_OE(1) = '1' else 'Z';
+Y_OE(1) <= (CS AND NOT nCSL);
+
+
+Y_I(2) <= ((SELECT AND A(2))
+	OR (NOT SELECT AND B(2)));
+Y(2) <= Y_I(2) when Y_OE(2) = '1' else 'Z';
+Y_OE(2) <= (CS AND NOT nCSL);
+
+
+Y_I(3) <= ((SELECT AND A(3))
+	OR (NOT SELECT AND B(3)));
+Y(3) <= Y_I(3) when Y_OE(3) = '1' else 'Z';
+Y_OE(3) <= (CS AND NOT nCSL);
+
+
+Y_I(4) <= ((SELECT AND A(4))
+	OR (NOT SELECT AND B(4)));
+Y(4) <= Y_I(4) when Y_OE(4) = '1' else 'Z';
+Y_OE(4) <= (CS AND NOT nCSL);
+
+
+Y_I(5) <= ((SELECT AND A(5))
+	OR (NOT SELECT AND B(5)));
+Y(5) <= Y_I(5) when Y_OE(5) = '1' else 'Z';
+Y_OE(5) <= (CS AND NOT nCSL);
+
+
+Y_I(6) <= ((SELECT AND A(6))
+	OR (NOT SELECT AND B(6)));
+Y(6) <= Y_I(6) when Y_OE(6) = '1' else 'Z';
+Y_OE(6) <= (CS AND NOT nCSL);
+
+
+Y_I(7) <= ((SELECT AND A(7))
+	OR (NOT SELECT AND B(7)));
+Y(7) <= Y_I(7) when Y_OE(7) = '1' else 'Z';
+Y_OE(7) <= (CS AND NOT nCSL);
+
+
+Y_I(8) <= ((SELECT AND A(8))
+	OR (NOT SELECT AND B(8)));
+Y(8) <= Y_I(8) when Y_OE(8) = '1' else 'Z';
+Y_OE(8) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(9) <= ((SELECT AND A(9))
+	OR (NOT SELECT AND B(9)));
+Y(9) <= Y_I(9) when Y_OE(9) = '1' else 'Z';
+Y_OE(9) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(10) <= ((SELECT AND A(10))
+	OR (NOT SELECT AND B(10)));
+Y(10) <= Y_I(10) when Y_OE(10) = '1' else 'Z';
+Y_OE(10) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(11) <= ((SELECT AND A(11))
+	OR (NOT SELECT AND B(11)));
+Y(11) <= Y_I(11) when Y_OE(11) = '1' else 'Z';
+Y_OE(11) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(12) <= ((SELECT AND A(12))
+	OR (NOT SELECT AND B(12)));
+Y(12) <= Y_I(12) when Y_OE(12) = '1' else 'Z';
+Y_OE(12) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(13) <= ((SELECT AND A(13))
+	OR (NOT SELECT AND B(13)));
+Y(13) <= Y_I(13) when Y_OE(13) = '1' else 'Z';
+Y_OE(13) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(14) <= ((SELECT AND A(14))
+	OR (NOT SELECT AND B(14)));
+Y(14) <= Y_I(14) when Y_OE(14) = '1' else 'Z';
+Y_OE(14) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+
+Y_I(15) <= ((SELECT AND A(15))
+	OR (NOT SELECT AND B(15)));
+Y(15) <= Y_I(15) when Y_OE(15) = '1' else 'Z';
+Y_OE(15) <= (CS AND NOT nCSU(1) AND NOT nCSU(0));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13               XC9572XL-10-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              51 VCC                           
+  2 NC                               52 A<4>                          
+  3 KPR                              53 B<4>                          
+  4 KPR                              54 A<5>                          
+  5 VCC                              55 B<5>                          
+  6 A<12>                            56 Y<4>                          
+  7 NC                               57 VCC                           
+  8 B<12>                            58 Y<5>                          
+  9 A<13>                            59 KPR                           
+ 10 B<13>                            60 KPR                           
+ 11 Y<12>                            61 KPR                           
+ 12 Y<13>                            62 GND                           
+ 13 Y<14>                            63 KPR                           
+ 14 Y<15>                            64 KPR                           
+ 15 A<14>                            65 KPR                           
+ 16 B<14>                            66 Y<6>                          
+ 17 A<15>                            67 Y<7>                          
+ 18 B<15>                            68 A<6>                          
+ 19 NC                               69 GND                           
+ 20 KPR                              70 B<6>                          
+ 21 GND                              71 A<7>                          
+ 22 KPR                              72 B<7>                          
+ 23 KPR                              73 NC                            
+ 24 NC                               74 KPR                           
+ 25 KPR                              75 GND                           
+ 26 VCC                              76 KPR                           
+ 27 KPR                              77 nCSU<0>                       
+ 28 A<0>                             78 nCSU<1>                       
+ 29 B<0>                             79 CS                            
+ 30 A<1>                             80 NC                            
+ 31 GND                              81 A<8>                          
+ 32 B<1>                             82 B<8>                          
+ 33 Y<0>                             83 TDO                           
+ 34 NC                               84 GND                           
+ 35 Y<1>                             85 A<9>                          
+ 36 Y<2>                             86 B<9>                          
+ 37 Y<3>                             87 Y<8>                          
+ 38 VCC                              88 VCC                           
+ 39 A<2>                             89 Y<9>                          
+ 40 B<2>                             90 Y<10>                         
+ 41 A<3>                             91 Y<11>                         
+ 42 B<3>                             92 A<10>                         
+ 43 NC                               93 B<10>                         
+ 44 GND                              94 A<11>                         
+ 45 TDI                              95 B<11>                         
+ 46 NC                               96 KPR                           
+ 47 TMS                              97 KPR                           
+ 48 TCK                              98 VCC                           
+ 49 SELECT                           99 KPR                           
+ 50 nCSL                            100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-TQ100
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

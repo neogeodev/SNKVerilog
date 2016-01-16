@@ -1,3 +1,20 @@
-// TODO: Reverse order of bits/pins
-assign {8,9,11,12,23,24,27,28} = (35&~18) ? 17 ? {5,7,14,16,20,22,30,32} : {4,6,13,15,19,21,29,31} : 8'bzzzzzzzz;
-assign {40,41,43,44,55,56,59,60} = (35&(~(33|34))) ? 17 ? {36,38,45,47,51,53,62,64} : {37,39,46,48,52,54,63,1} : 8'bzzzzzzzz;
+// SNK NEO-257 chip logic
+// Part of SNKVerilog
+// ©2016 furrtek
+
+// Nothing is tested
+
+module NEO257 (
+	input [15:0] A,
+	input [15:0] B,
+	output [15:0] Y,
+	input SELECT,
+	input CS,
+	input nCSL,
+	input [1:0] nCSU
+);
+
+assign Y[7:0] = (CS & ~nCSL) ? SELECT ? A[7:0] : B[7:0] : 8'bzzzzzzzz;
+assign Y[15:8] = (CS & ~|{nCSU}) ? SELECT ? A[15:8] : B[15:8] : 8'bzzzzzzzz;
+
+endmodule
