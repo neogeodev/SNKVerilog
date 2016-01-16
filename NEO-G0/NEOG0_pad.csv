@@ -1,0 +1,129 @@
+Release 8.1i - Fit P.58f
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 1-16-2016  5:37AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  NEOG0.ngd
+output file: NEOG0_pad.csv
+Part type:   xc9572xl
+Speed grade: -10
+Package:     tq100
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,B<12>,I/O,I/O,BIDIR,,,,,,,,,
+P2,TIE,,.,,,,,,,,,,
+P3,TIE,,I/O/GTS1,,,,,,,,,,
+P4,TIE,,I/O/GTS2,,,,,,,,,,
+P5,VCC,,VCCINT,,,,,,,,,,
+P6,B<13>,I/O,I/O,BIDIR,,,,,,,,,
+P7,TIE,,.,,,,,,,,,,
+P8,B<14>,I/O,I/O,BIDIR,,,,,,,,,
+P9,B<15>,I/O,I/O,BIDIR,,,,,,,,,
+P10,ANDO,O,I/O,OUTPUT,,,,,,,,,
+P11,ANDI1,I,I/O,INPUT,,,,,,,,,
+P12,ANDI0,I,I/O,INPUT,,,,,,,,,
+P13,TIE,,I/O,,,,,,,,,,
+P14,B<0>,I/O,I/O,BIDIR,,,,,,,,,
+P15,B<1>,I/O,I/O,BIDIR,,,,,,,,,
+P16,B<2>,I/O,I/O,BIDIR,,,,,,,,,
+P17,TIE,,I/O,,,,,,,,,,
+P18,B<3>,I/O,I/O,BIDIR,,,,,,,,,
+P19,TIE,,.,,,,,,,,,,
+P20,A<0>,I/O,I/O,BIDIR,,,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,TIE,,I/O/GCK1,,,,,,,,,,
+P23,TIE,,I/O/GCK2,,,,,,,,,,
+P24,TIE,,.,,,,,,,,,,
+P25,A<1>,I/O,I/O,BIDIR,,,,,,,,,
+P26,VCC,,VCCIO,,,,,,,,,,
+P27,TIE,,I/O/GCK3,,,,,,,,,,
+P28,A<2>,I/O,I/O,BIDIR,,,,,,,,,
+P29,A<3>,I/O,I/O,BIDIR,,,,,,,,,
+P30,C<0>,I/O,I/O,BIDIR,,,,,,,,,
+P31,GND,,GND,,,,,,,,,,
+P32,C<1>,I/O,I/O,BIDIR,,,,,,,,,
+P33,C<2>,I/O,I/O,BIDIR,,,,,,,,,
+P34,TIE,,.,,,,,,,,,,
+P35,C<3>,I/O,I/O,BIDIR,,,,,,,,,
+P36,C<4>,I/O,I/O,BIDIR,,,,,,,,,
+P37,C<5>,I/O,I/O,BIDIR,,,,,,,,,
+P38,VCC,,VCCIO,,,,,,,,,,
+P39,C<6>,I/O,I/O,BIDIR,,,,,,,,,
+P40,C<7>,I/O,I/O,BIDIR,,,,,,,,,
+P41,A<4>,I/O,I/O,BIDIR,,,,,,,,,
+P42,A<5>,I/O,I/O,BIDIR,,,,,,,,,
+P43,TIE,,.,,,,,,,,,,
+P44,GND,,GND,,,,,,,,,,
+P45,TDI,,TDI,,,,,,,,,,
+P46,TIE,,.,,,,,,,,,,
+P47,TMS,,TMS,,,,,,,,,,
+P48,TCK,,TCK,,,,,,,,,,
+P49,A<6>,I/O,I/O,BIDIR,,,,,,,,,
+P50,A<7>,I/O,I/O,BIDIR,,,,,,,,,
+P51,VCC,,VCCIO,,,,,,,,,,
+P52,B<4>,I/O,I/O,BIDIR,,,,,,,,,
+P53,B<5>,I/O,I/O,BIDIR,,,,,,,,,
+P54,B<6>,I/O,I/O,BIDIR,,,,,,,,,
+P55,B<7>,I/O,I/O,BIDIR,,,,,,,,,
+P56,C<8>,I/O,I/O,BIDIR,,,,,,,,,
+P57,VCC,,VCCINT,,,,,,,,,,
+P58,C<9>,I/O,I/O,BIDIR,,,,,,,,,
+P59,C<10>,I/O,I/O,BIDIR,,,,,,,,,
+P60,C<11>,I/O,I/O,BIDIR,,,,,,,,,
+P61,A<8>,I/O,I/O,BIDIR,,,,,,,,,
+P62,GND,,GND,,,,,,,,,,
+P63,A<9>,I/O,I/O,BIDIR,,,,,,,,,
+P64,A<10>,I/O,I/O,BIDIR,,,,,,,,,
+P65,A<11>,I/O,I/O,BIDIR,,,,,,,,,
+P66,B<8>,I/O,I/O,BIDIR,,,,,,,,,
+P67,B<9>,I/O,I/O,BIDIR,,,,,,,,,
+P68,B<10>,I/O,I/O,BIDIR,,,,,,,,,
+P69,GND,,GND,,,,,,,,,,
+P70,B<11>,I/O,I/O,BIDIR,,,,,,,,,
+P71,TIE,,I/O,,,,,,,,,,
+P72,TIE,,I/O,,,,,,,,,,
+P73,TIE,,.,,,,,,,,,,
+P74,TIE,,I/O,,,,,,,,,,
+P75,GND,,GND,,,,,,,,,,
+P76,TIE,,I/O,,,,,,,,,,
+P77,TIE,,I/O,,,,,,,,,,
+P78,TIE,,I/O,,,,,,,,,,
+P79,TIE,,I/O,,,,,,,,,,
+P80,TIE,,.,,,,,,,,,,
+P81,nCEB,I,I/O,INPUT,,,,,,,,,
+P82,SELECTL,I,I/O,INPUT,,,,,,,,,
+P83,TDO,,TDO,,,,,,,,,,
+P84,GND,,GND,,,,,,,,,,
+P85,ORO,O,I/O,OUTPUT,,,,,,,,,
+P86,C<12>,I/O,I/O,BIDIR,,,,,,,,,
+P87,C<13>,I/O,I/O,BIDIR,,,,,,,,,
+P88,VCC,,VCCIO,,,,,,,,,,
+P89,C<14>,I/O,I/O,BIDIR,,,,,,,,,
+P90,C<15>,I/O,I/O,BIDIR,,,,,,,,,
+P91,A<12>,I/O,I/O,BIDIR,,,,,,,,,
+P92,A<13>,I/O,I/O,BIDIR,,,,,,,,,
+P93,A<14>,I/O,I/O,BIDIR,,,,,,,,,
+P94,A<15>,I/O,I/O,BIDIR,,,,,,,,,
+P95,nCEA,I,I/O,INPUT,,,,,,,,,
+P96,SELECTU,I,I/O,INPUT,,,,,,,,,
+P97,TIE,,I/O,,,,,,,,,,
+P98,VCC,,VCCINT,,,,,,,,,,
+P99,TIE,,I/O/GSR,,,,,,,,,,
+P100,GND,,GND,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

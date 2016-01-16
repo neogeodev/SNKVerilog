@@ -1,0 +1,5 @@
+# begin LFP file C:\Users\furrtek\Documents\SNKVerilog\trunk\NEO-G0\NEOG0.lfp
+designfile neo-g0.v
+parttype xc9572xl-tq100-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

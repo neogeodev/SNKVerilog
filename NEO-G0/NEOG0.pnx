@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500xl" device="XC9572XL" pkg="TQ100" spg="-10"/><pin dir="input" nm="SELECTL" no="82"/><pin dir="input" nm="nCEA" no="95"/><pin dir="input" nm="SELECTU" no="96"/><pin dir="input" nm="nCEB" no="81"/><pin dir="input" nm="ANDI1" no="11"/><pin dir="input" nm="ANDI0" no="12"/><pin dir="output" nm="ORO" no="85" sr="fast"/><pin dir="output" nm="ANDO" no="10" sr="fast"/><pin dir="bidir" nm="A&lt;0&gt;" no="20" sr="fast"/><pin dir="bidir" nm="A&lt;10&gt;" no="64" sr="fast"/><pin dir="bidir" nm="A&lt;11&gt;" no="65" sr="fast"/><pin dir="bidir" nm="A&lt;12&gt;" no="91" sr="fast"/><pin dir="bidir" nm="A&lt;13&gt;" no="92" sr="fast"/><pin dir="bidir" nm="A&lt;14&gt;" no="93" sr="fast"/><pin dir="bidir" nm="A&lt;15&gt;" no="94" sr="fast"/><pin dir="bidir" nm="A&lt;1&gt;" no="25" sr="fast"/><pin dir="bidir" nm="A&lt;2&gt;" no="28" sr="fast"/><pin dir="bidir" nm="A&lt;3&gt;" no="29" sr="fast"/><pin dir="bidir" nm="A&lt;4&gt;" no="41" sr="fast"/><pin dir="bidir" nm="A&lt;5&gt;" no="42" sr="fast"/><pin dir="bidir" nm="A&lt;6&gt;" no="49" sr="fast"/><pin dir="bidir" nm="A&lt;7&gt;" no="50" sr="fast"/><pin dir="bidir" nm="A&lt;8&gt;" no="61" sr="fast"/><pin dir="bidir" nm="A&lt;9&gt;" no="63" sr="fast"/><pin dir="bidir" nm="C&lt;0&gt;" no="30" sr="fast"/><pin dir="bidir" nm="B&lt;0&gt;" no="14" sr="fast"/><pin dir="bidir" nm="C&lt;10&gt;" no="59" sr="fast"/><pin dir="bidir" nm="B&lt;10&gt;" no="68" sr="fast"/><pin dir="bidir" nm="C&lt;11&gt;" no="60" sr="fast"/><pin dir="bidir" nm="B&lt;11&gt;" no="70" sr="fast"/><pin dir="bidir" nm="C&lt;12&gt;" no="86" sr="fast"/><pin dir="bidir" nm="B&lt;12&gt;" no="1" sr="fast"/><pin dir="bidir" nm="C&lt;13&gt;" no="87" sr="fast"/><pin dir="bidir" nm="B&lt;13&gt;" no="6" sr="fast"/><pin dir="bidir" nm="C&lt;14&gt;" no="89" sr="fast"/><pin dir="bidir" nm="B&lt;14&gt;" no="8" sr="fast"/><pin dir="bidir" nm="C&lt;15&gt;" no="90" sr="fast"/><pin dir="bidir" nm="B&lt;15&gt;" no="9" sr="fast"/><pin dir="bidir" nm="C&lt;1&gt;" no="32" sr="fast"/><pin dir="bidir" nm="B&lt;1&gt;" no="15" sr="fast"/><pin dir="bidir" nm="C&lt;2&gt;" no="33" sr="fast"/><pin dir="bidir" nm="B&lt;2&gt;" no="16" sr="fast"/><pin dir="bidir" nm="C&lt;3&gt;" no="35" sr="fast"/><pin dir="bidir" nm="B&lt;3&gt;" no="18" sr="fast"/><pin dir="bidir" nm="C&lt;4&gt;" no="36" sr="fast"/><pin dir="bidir" nm="B&lt;4&gt;" no="52" sr="fast"/><pin dir="bidir" nm="C&lt;5&gt;" no="37" sr="fast"/><pin dir="bidir" nm="B&lt;5&gt;" no="53" sr="fast"/><pin dir="bidir" nm="C&lt;6&gt;" no="39" sr="fast"/><pin dir="bidir" nm="B&lt;6&gt;" no="54" sr="fast"/><pin dir="bidir" nm="C&lt;7&gt;" no="40" sr="fast"/><pin dir="bidir" nm="B&lt;7&gt;" no="55" sr="fast"/><pin dir="bidir" nm="C&lt;8&gt;" no="56" sr="fast"/><pin dir="bidir" nm="B&lt;8&gt;" no="66" sr="fast"/><pin dir="bidir" nm="C&lt;9&gt;" no="58" sr="fast"/><pin dir="bidir" nm="B&lt;9&gt;" no="67" sr="fast"/></ibis>
