@@ -1,12 +1,36 @@
+// SNK NEO-273 chip logic
+// Part of SNKVerilog
+// ©2016 furrtek
+
+// Nothing is tested
+
+module NEO273 (
+	input [19:0] P,
+	output [20:5] CA,
+	output CA0,
+	output CA1,
+	output CA2,
+	output CA3,
+	output [16:4] SA,
+	output SA0,
+	output SA1,
+	output SA2,
+	output nCA20,
+	input PCK1B,
+	input PCK2B
+);
+
 reg [19:0] C_LATCH;
 reg [15:0] S_LATCH;
 
-assign {46,45,44,43,41,40,39,38,14,13,12,11,9,8,7,6,33,32,1,64} = C_LATCH;
-assign {37,36,35,34,18,17,16,15,5,4,3,2,51,50,49,48} = S_LATCH;
-assign 47 = ~46;
+assign {CA3,CA2,CA1,CA0,CA[20:5]} = C_LATCH;
+assign {SA[4],SA2,SA1,SA0,SA[16:5]} = S_LATCH;
+assign nCA20 = ~CA[20];
 
-always @(posedge 23)
-  C_LATCH <= {27,25,59,57,55,54,53,52,31,30,29,28,22,21,20,19,63,62,61,60};
+always @(posedge PCK1B)
+  C_LATCH <= P;
 
-always @(posedge 24)
-  S_LATCH <= {55,54,53,52,31,30,29,28,22,21,20,19,63,62,61,60};
+always @(posedge PCK2B)
+  S_LATCH <= P[15:0];
+
+endmodule
