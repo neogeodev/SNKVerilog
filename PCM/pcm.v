@@ -31,11 +31,11 @@ end
 
 assign SDRAD = nSDROE ? 8'bzzzzzzzz : RDLATCH;
 always @(nCEN)
-	is (nCEN) RDLATCH <= D;
+	if (nCEN) RDLATCH <= D;
 
 assign SDPAD = nSDPOE ? 8'bzzzzzzzz : PDLATCH;
 always @(SDPOE)
-	is (SDPOE) PDLATCH <= D;
+	if (SDPOE) PDLATCH <= D;
 
 assign A = nSDPOE ? RALATCH : PALATCH;
 
