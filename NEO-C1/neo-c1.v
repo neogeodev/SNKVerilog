@@ -4,10 +4,12 @@ assign WRAMZONE = |{A23I,A22I,A21,~A20};                 // 100000 1FFFFF
 assign PORTZONE = |{A23I,A22I,~A21,A20};                 // 200000 2FFFFF
 assign CTRL1ZONE = |{A23I,A22I,~A21,~A20,A19,A18,A17};   // 300000 31FFFF
 assign ICOMZONE = |{A23I,A22I,~A21,~A20,A19,A18,~A17};   // 320000 33FFFF
-assign CTRL2ZONE = |{A23I,A22I,~A21,~A20,A19,~A18};      // 340000 37FFFF not sure if A17 is used (up to 35FFFF only ?)
+assign CTRL2ZONE = |{A23I,A22I,~A21,~A20,A19,~A18,A17};  // 340000 35FFFF
+
 assign BITW0 = |{A23I,A22I,~A21,~A20,~A19,A18,A17};      // 380000 39FFFF ?
 assign BITW1 = |{A23I,A22I,~A21,~A20,~A19,A18,~A17};     // 3A0000 3BFFFF ?
-assign LSPCZONE = |{A23I,A22I,~A21,~A20,~A19,~A18};      // 3C0000 3DFFFF not sure if A17 is used (up to 3DFFFF only ?)
+assign LSPCZONE = |{A23I,A22I,~A21,~A20,~A19,~A18};      // 3C0000 3DFFFF
+
 assign PAL = |{A23I,~A22I};                              // 400000 7FFFFF
 assign CARDZONE = |{~A23I,A22I};                         // 800000 BFFFFF
 assign SROMZONE = |{~A23I,~A22I,A21,A20};                // C00000 CFFFFF
