@@ -1,5 +1,0 @@
-# begin LFP file C:\Users\furrtek\Documents\SNKVerilog\trunk\NEO-273\NEO273.lfp
-designfile neo-273.v
-parttype xc9572xl-tq100-10
-bus_delimiter 0;
-set_busdelim_onsave 1;
