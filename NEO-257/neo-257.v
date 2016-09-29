@@ -2,6 +2,7 @@
 // Part of SNKVerilog
 // ©2016 furrtek
 
+// Fits in a XC9572XL
 // Nothing is tested
 
 module NEO257 (
