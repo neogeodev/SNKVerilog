@@ -10,11 +10,11 @@ module NEO257 (
 	output [15:0] Y,
 	input SELECT,
 	input CS,
-	input nCSL,
-	input [1:0] nCSU
+	input nOEL,
+	input [1:0] nOEU
 );
 
-assign Y[7:0] = (CS & ~nCSL) ? SELECT ? A[7:0] : B[7:0] : 8'bzzzzzzzz;
-assign Y[15:8] = (CS & ~|{nCSU}) ? SELECT ? A[15:8] : B[15:8] : 8'bzzzzzzzz;
+assign Y[7:0] = (CS & ~nOEL) ? SELECT ? B[7:0] : A[7:0] : 8'bzzzzzzzz;
+assign Y[15:8] = (CS & ~|{nOEU}) ? SELECT ? B[15:8] : A[15:8] : 8'bzzzzzzzz;
 
 endmodule
