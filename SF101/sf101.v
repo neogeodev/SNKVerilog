@@ -1,0 +1,3 @@
+// Altera EPM7128 CPLD used in King Of Fighters '98 as protection device
+
+// To do...
